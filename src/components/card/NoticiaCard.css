@@ -1,0 +1,36 @@
+.noticia-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título da notícia (h3) */
+.noticia-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Estilos para o texto de introdução (p) */
+.noticia-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Estilos para o link "Ler mais" */
+.noticia-card a {
+  text-decoration: none;
+  color: #0077b6; /* Cor do link */
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilos para o link "Ler mais" ao passar o mouse */
+.noticia-card a:hover {
+  text-decoration: underline;
+}

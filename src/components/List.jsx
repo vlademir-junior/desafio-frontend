@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import fetchApi from '../service/fetchApi';
+import '../App.css'
 
 export default function List({ type }) {
   const [items, setItems] = useState([]);
@@ -25,7 +26,7 @@ export default function List({ type }) {
   }, [type]);
 
   return (
-    <div>
+    <main>
       <div className={`container ${type}s-container`}>
         <h1>{type === 'release' ? 'Releases' : 'Notícias'}:</h1>
         <div className="row">
@@ -34,6 +35,6 @@ export default function List({ type }) {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

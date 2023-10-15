@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <div>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/noticias" element={<List type="noticia" />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/:tipo/:id" element={<Details />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </Router>
   );

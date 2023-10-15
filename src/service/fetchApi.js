@@ -1,5 +1,5 @@
 export default async function fetchApi(params) {
-  const apiUrl = 'http://servicodados.ibge.gov.br/api/v3/noticias/';
+  const apiUrl = 'https://servicodados.ibge.gov.br/api/v3/noticias/';
   const queryParams = new URLSearchParams(params);
 
   try {

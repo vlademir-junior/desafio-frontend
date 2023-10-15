@@ -24,14 +24,14 @@ function Favorites() {
   }
 
   return (
-    <div className="container">
+    <main className="container">
       <h2>Favoritos:</h2>
       <div className="row">
         {favoriteItems.map((item) => (
           <Card key={item.id} data={item} type="favorito" />
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 

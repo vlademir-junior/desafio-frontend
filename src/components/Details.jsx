@@ -52,14 +52,11 @@ function Details() {
   return (
     <div className="col-md-4 mb-4">
       <div className="card">
-        <img src={data.imagens} className="card-img-top" alt="Imagem" />
+        <img src={data.imagens} className="card-img-top" alt="logo" />
         <div className="card-body">
           <h5 className="card-title">{data.titulo}</h5>
           <p className="card-text">Data de Publicação: {data.data_publicacao}</p>
           <p className="card-text">Tipo: {data.tipo}</p>
-          <a href={data.link} className="btn btn-primary">
-            Ler mais
-          </a>
           <button onClick={toggleFavorite} className="btn btn-link">
             {favorited ? <i className="bi bi-heart-fill"></i> : <i className="bi bi-heart"></i>}
           </button>

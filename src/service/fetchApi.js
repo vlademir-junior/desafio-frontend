@@ -5,6 +5,7 @@ export default async function fetchApi(params) {
   try {
     const response = await fetch(`${apiUrl}?${queryParams}`);
     const data = await response.json();
+    console.log(data);
 
     if (response.ok) {
       return { data, error: null };

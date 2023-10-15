@@ -1,9 +1,15 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: #003a7f;
   color: #fff;
-  margin-top: 20px;
   bottom: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  width: 100%;
 }

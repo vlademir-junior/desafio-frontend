@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import List from "./components/List";
-import Details from "./components/Details"; // Importe o componente Details
+import Details from "./components/Details";
+import Favorites from "./components/Favorites";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/noticias" element={<List type="noticia" />} />
           <Route path="/releases" element={<List type="release" />} />
-          <Route path="/detalhes/:tipo/:id" element={<Details />} /> {/* Rota para Details */}
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/:tipo/:id" element={<Details />} />
         </Routes>
       </div>
       <Footer />

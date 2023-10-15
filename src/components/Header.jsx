@@ -14,6 +14,9 @@ function Header() {
       case 'Notícias':
         fetchAPI('?tipo=noticia');
         break;
+      case 'Favoritos':
+        // Use o componente Link para navegar para a rota '/favoritos'
+        return <Link to="/favoritos" />;
       default:
         break;
     }
@@ -36,6 +39,9 @@ function Header() {
           </li>
           <li>
             <Link to="/releases" onClick={handleNavbarClick}>Releases</Link>
+          </li>
+          <li>
+            <Link to="/favorites" onClick={handleNavbarClick}>Favoritos</Link>
           </li>
         </ul>
       </nav>

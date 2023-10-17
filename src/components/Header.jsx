@@ -9,13 +9,13 @@ function Header() {
   const renderNavItems = () => {
     return (
       <>
-        <Nav.Link as={Link} to="/noticias">
+        <Nav.Link className="link" as={Link} to="/noticias">
           Notícias
         </Nav.Link>
-        <Nav.Link as={Link} to="/releases">
+        <Nav.Link className="link" as={Link} to="/releases">
           Releases
         </Nav.Link>
-        <Nav.Link as={Link} to="/favorites">
+        <Nav.Link className="link" as={Link} to="/favorites">
           Favoritos
         </Nav.Link>
       </>
@@ -35,7 +35,7 @@ function Header() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">{renderNavItems()}</Nav>
+              <Nav className="mr-auto link">{renderNavItems()}</Nav>
             </Navbar.Collapse>
           </Navbar>
         </div>

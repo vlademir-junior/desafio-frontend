@@ -1,4 +1,3 @@
-/* styles/Header.css */
 .custom-navbar {
   display: flex;
   justify-content: space-between;
@@ -16,19 +15,17 @@ h2 {
   font-size: 60px;
 }
 
-/* Estilos para a barra de navegação */
 .navbar-collapse {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
 
-/* Estilos para os links de navegação */
 .link-nav {
   text-decoration: none;
   font-weight: bold;
-  color: #fff !impotant; /* Cor do texto dos links */
-  margin: 0 10px; /* Espaçamento entre os links */
+  color: #fff !important;
+  margin: 0 10px;
 }
 
 .link-nav:hover {

@@ -27,21 +27,18 @@ export default function Card({ data }) {
       <div className={`card my-card`}>
         <div className="card-body">
           <h3 className="card-title">{data.titulo}</h3>
-          <p className="card-text">{data.introducao}</p>
+          <br/>
           <p className="card-text">
             <strong>Data de Publicação:</strong> {data.data_publicacao}
           </p>
+          <br/>
+          <strong>Resumo:</strong> 
+          <p className="card-text">{data.introducao}</p>
+          <br/>
           <p className="card-text">
-            <strong>Tipo:</strong> {data.tipo}
+            <strong>Tags:</strong> {data.editorias}
           </p>
-          <p className="card-text">
-            <strong>Editorias:</strong> {data.editorias}
-          </p>
-          {data.destaque && (
-            <p className="card-text">
-              <strong>Destaque:</strong> Sim
-            </p>
-          )}
+          <br/>         
           {data.link && (
             <a
             href={data.link}

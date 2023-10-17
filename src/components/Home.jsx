@@ -29,7 +29,8 @@ export default function Home() {
     <main>
     <div className="container">
       <div className="home-content">
-        <h1 className="display-4">Bem-vindo a página de notícias do IBGE</h1>
+        <h1 className="display-4">Bem-vindo ao Hub de notícias do IBGE</h1>
+        <br/>
         <p className="lead">Fique por dentro de todas as novidades.</p>
       </div>
       <div className="recent-noticias">

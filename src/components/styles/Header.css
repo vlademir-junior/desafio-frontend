@@ -1,43 +1,36 @@
+/* styles/Header.css */
 .custom-navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 0px;
-  margin: 0px 0px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   background-color: #003a7f;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
 }
 
 h2 {
   font-size: 60px;
-  margin: 0px 50px;
 }
 
+/* Estilos para a barra de navegação */
 .navbar-collapse {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
 
+/* Estilos para os links de navegação */
 .link-nav {
   text-decoration: none;
   font-weight: bold;
+  color: #fff !impotant; /* Cor do texto dos links */
+  margin: 0 10px; /* Espaçamento entre os links */
 }
 
 .link-nav:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 579px) {
-  .logo {
-    margin: 0;
-    width: 60px;
-  }
-}
-
-/* Para telas grandes (mais de 767px de largura) */
-@media (min-width: 580px) {
-  .logo {
-    margin: 0px 30px 0px 0px;
-    width: 80px;
-  }
 }

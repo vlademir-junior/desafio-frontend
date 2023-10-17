@@ -4,10 +4,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import List from "./components/List";
-import Details from "./components/Details";
 import Favorites from "./components/Favorites";
 
-function App() {
+
+export default function App() {
   return (
     <Router>
       <Header />
@@ -17,12 +17,9 @@ function App() {
           <Route path="/noticias" element={<List type="noticia" />} />
           <Route path="/releases" element={<List type="release" />} />
           <Route path="/favorites" element={<Favorites />} />
-          <Route path="/:tipo/:id" element={<Details />} />
         </Routes>
       </main>
       <Footer />
     </Router>
   );
 }
-
-export default App;

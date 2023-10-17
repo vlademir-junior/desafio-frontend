@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import fetchApi from '../service/fetchApi';
-import Card from './Card';
-import '../App.css';
-import Pagination from './Pagination';
+import React, { useState, useEffect } from "react";
+import fetchApi from "../service/fetchApi";
+import Card from "./Card";
+import { Carousel } from "react-bootstrap";
+import CarouselCard from "./CarouselCard";
+import "../App.css";
+import Pagination from "./Pagination";
 
 export default function Home() {
   const [recentNoticias, setRecentNoticias] = useState([]);
@@ -11,7 +13,7 @@ export default function Home() {
 
   const fetchRecentNoticias = async (page) => {
     try {
-      const params = { tipo: 'noticia', qtd: 18, page };
+      const params = { tipo: "noticia", qtd: 18, page };
       const { data, error } = await fetchApi(params);
 
       if (error) {
@@ -38,18 +40,32 @@ export default function Home() {
       <div className="container">
         <div className="home-content">
           <h1 className="display-4">Bem-vindo ao Hub de notícias do IBGE</h1>
-          <br />
           <p className="lead">Fique por dentro de todas as novidades.</p>
         </div>
         <div className="recent-noticias">
+          <h2 className="mt-5">Destaques da página:</h2>
+          {recentNoticias.length > 0 && (
+            <Carousel>
+              {recentNoticias.slice(0, 3).map((noticia) => (
+                <Carousel.Item key={noticia.id}>
+                  <CarouselCard data={noticia} />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          )}
           <h2 className="mt-5">Últimas notícias:</h2>
+          <br />
           <ul className="row">
             {recentNoticias.map((noticia) => (
               <Card key={noticia.id} data={noticia} type="noticia" />
             ))}
           </ul>
         </div>
-        <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </main>
   );

@@ -15,6 +15,10 @@ h2 {
   font-size: 60px;
 }
 
+.link {
+  color: #fff !important;
+}
+
 .navbar-collapse {
   display: flex;
   justify-content: flex-end;

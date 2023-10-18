@@ -44,6 +44,7 @@ export default function Home() {
         </div>
         <div className="recent-noticias">
           <h2 className="mt-5">Destaques da página:</h2>
+          <br/>
           {recentNoticias.length > 0 && (
             <Carousel>
               {recentNoticias.slice(0, 3).map((noticia) => (

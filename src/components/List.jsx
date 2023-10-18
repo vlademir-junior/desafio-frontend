@@ -37,6 +37,7 @@ export default function List({ type }) {
     <main>
       <div className={`container ${type}s-container`}>
         <h1>{type === 'release' ? 'Releases' : 'Notícias'}:</h1>
+        <br/>
         <div className="row">
           {items.map((item) => (
             <Card key={item.id} data={item} type={type} />

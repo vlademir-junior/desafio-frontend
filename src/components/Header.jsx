@@ -26,7 +26,9 @@ function Header() {
     <header>
       <div className="custom-navbar">
         <div className="logo-container">
-          <img src={ibgeLogo} alt="IBGE Logo" className="logo" />
+          <a href="/">
+            <img src={ibgeLogo} alt="IBGE Logo" className="logo" />
+          </a>
         </div>
         <div className="header">
           <Navbar expand="md">

@@ -42,8 +42,8 @@ export default function Card({ data }) {
   };
 
   return (
-    <div className={`col-md-4 mb-4`}>
-      <div className={`card my-card`}>
+    <div className="my-card" style={{ width: '80%', height: '80%', margin: '0 auto', marginBottom: '20px' }}>
+      <div className="card">
         <div className="card-body">
           <h3 className="card-title">{data.titulo}</h3>
           <br />
@@ -76,7 +76,7 @@ export default function Card({ data }) {
           )}
           <button
             onClick={toggleFavorite}
-            className={`btn btn-link text-danger`}
+            className="btn btn-link text-danger"
           >
             {favorited ? (
               <i className="bi bi-heart-fill"></i>

@@ -16,17 +16,22 @@ function Favorites() {
 
   if (favoriteItems.length === 0) {
     return (
-      <div className="container">
-        <h2>Favoritos:</h2>
-        <p>Nenhum item favorito encontrado.</p>
-      </div>
+      <main>
+        <div className="container">
+          <br/>
+          <h2>Favoritos:</h2>
+          <br/>
+          <br/>
+          <p>Nenhum item favorito encontrado.</p>
+        </div>
+      </main>
     );
   }
 
   return (
-    <main className="container">
+    <main className="">
       <h2>Favoritos:</h2>
-      <div className="row">
+      <div className="">
         {favoriteItems.map((item) => (
           <Card key={item.id} data={item} type="favorito" />
         ))}

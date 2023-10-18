@@ -42,9 +42,9 @@ export default function Home() {
           <h1 className="display-4">Bem-vindo ao Hub de notícias do IBGE</h1>
           <p className="lead">Fique por dentro de todas as novidades.</p>
         </div>
-        <div className="recent-noticias">
+        <div className="justify-content-center">
           <h2 className="mt-5">Destaques da página:</h2>
-          <br/>
+          <br />
           {recentNoticias.length > 0 && (
             <Carousel>
               {recentNoticias.slice(0, 3).map((noticia) => (
@@ -56,17 +56,20 @@ export default function Home() {
           )}
           <h2 className="mt-5">Últimas notícias:</h2>
           <br />
-          <ul className="row">
+          <ul className="list-unstyled">
             {recentNoticias.map((noticia) => (
               <Card key={noticia.id} data={noticia} type="noticia" />
             ))}
           </ul>
         </div>
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          handlePageChange={handlePageChange}
-        />
+        <div className="pagination-container">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            handlePageChange={handlePageChange}
+          />
+        </div>
+
       </div>
     </main>
   );

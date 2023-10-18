@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import './styles/CarouselCard.css';
 
 export default function Card({ data }) {
   const image = JSON.parse(data.imagens);

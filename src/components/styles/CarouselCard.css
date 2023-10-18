@@ -1,0 +1,18 @@
+.carousel-card {
+  background-color: #bbb;
+  width: 70%;
+  height: auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-card img {
+  max-width: 100%;
+  height: auto;
+}

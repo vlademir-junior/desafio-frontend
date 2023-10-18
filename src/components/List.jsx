@@ -36,6 +36,7 @@ export default function List({ type }) {
   return (
     <main>
       <div className={`container ${type}s-container`}>
+        <br/>
         <h1>{type === 'release' ? 'Releases' : 'Notícias'}:</h1>
         <br/>
         <div className="row">
@@ -43,7 +44,13 @@ export default function List({ type }) {
             <Card key={item.id} data={item} type={type} />
           ))}
         </div>
-        <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+        <div className="pagination-container">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            handlePageChange={handlePageChange}
+          />
+        </div>
       </div>
     </main>
   );

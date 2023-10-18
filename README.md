@@ -1,5 +1,5 @@
-# Site de News do IBGE - Desafio Frontend
+# News Hub do IBGE - Desafio Frontend
 
-Desafio do final do módulo Frontend da Trybe. 
+Desafio do final do módulo Frontend da Trybe para o mercado de trabalho.
 
-_URL: https://desafio-frontend-omega.vercel.app/_
+_URL: <https://desafio-frontend-omega.vercel.app/>

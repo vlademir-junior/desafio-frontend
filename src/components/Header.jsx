@@ -33,7 +33,7 @@ function Header() {
         <div className="header">
           <Navbar expand="md">
             <Navbar.Brand as={Link} to="/" className="logo-link">
-              <h2 className="text-white">News</h2>
+              <h2 className="text-white">Home</h2>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

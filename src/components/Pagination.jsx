@@ -5,11 +5,10 @@ export default function Pagination({
   totalPages,
   handlePageChange,
 }) {
-
   return (
-    <div className="pagination">
-      <div className="row">
-        <div className="col-md-4 text-left">
+    <div className="row pagination">
+      <div className="d-flex">
+        <div className="col-md-4 d-flex justify-content-start align-items-center">
           {currentPage > 1 && (
             <button
               className="btn btn-primary"
@@ -19,10 +18,10 @@ export default function Pagination({
             </button>
           )}
         </div>
-        <div className="col-md-4 text-center">
+        <div className="col-md-4 d-flex justify-content-center align-items-center">
           <p>Página {currentPage} de {totalPages}</p>
         </div>
-        <div className="col-md-4 text-right">
+        <div className="col-md-4 d-flex justify-content-end align-items-center">
           {currentPage < totalPages && (
             <button
               className="btn btn-primary"

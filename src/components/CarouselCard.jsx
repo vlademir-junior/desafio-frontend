@@ -2,6 +2,9 @@ import React from "react";
 import '../App.css';
 
 export default function Card({ data }) {
+  const image = JSON.parse(data.imagens);
+  const linkSplit = data.link.split('/');
+  const finalLink = linkSplit.slice(0, 3).join('/');
 
   return (
     <div>
@@ -9,10 +12,10 @@ export default function Card({ data }) {
         <div>
           <h3 className="card-title">{data.titulo}</h3>
           <br/>
+          <a href={data.link}>
+           <img src={ `${finalLink}/${image.image_intro}` } alt="imagem ibge" />
+          </a>
           <br/>
-          <p className="card-text">
-            <strong>Tags:</strong> {data.editorias}
-          </p>
         </div>
       </div>
     </div>

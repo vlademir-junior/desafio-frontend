@@ -17,7 +17,7 @@ function Favorites() {
   if (favoriteItems.length === 0) {
     return (
       <main>
-        <div className="container">
+        <div className="container" data-testid="favorites">
           <br/>
           <h2>Favoritos:</h2>
           <br/>
@@ -29,7 +29,7 @@ function Favorites() {
   }
 
   return (
-    <main className="">
+    <main data-testid="favorites">
       <h2>Favoritos:</h2>
       <div className="">
         {favoriteItems.map((item) => (

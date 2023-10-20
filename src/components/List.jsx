@@ -35,7 +35,7 @@ export default function List({ type }) {
 
   return (
     <main>
-      <div className={`container ${type}s-container`}>
+      <div className={`container ${type}s-container`} data-testid="list">
         <br/>
         <h1>{type === 'release' ? 'Releases' : 'Notícias'}:</h1>
         <br/>

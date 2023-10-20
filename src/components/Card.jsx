@@ -42,7 +42,11 @@ export default function Card({ data }) {
   };
 
   return (
-    <div className="my-card" style={{ width: '80%', height: '80%', margin: '0 auto', marginBottom: '20px' }}>
+    <div
+      className="my-card"
+      style={{ width: '80%', height: '80%', margin: '0 auto', marginBottom: '20px' }}
+      data-testid="card"
+    >
       <div className="card">
         <div className="card-body">
           <h3 className="card-title">{data.titulo}</h3>

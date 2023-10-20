@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header data-testid="header">
       <div className="custom-navbar">
         <div className="logo-container">
           <a href="/">

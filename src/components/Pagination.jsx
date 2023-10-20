@@ -6,7 +6,7 @@ export default function Pagination({
   handlePageChange,
 }) {
   return (
-    <div className="row pagination">
+    <div className="row pagination" data-testid="pagination">
       <div className="d-flex">
         <div className="col-md-4 d-flex justify-content-start align-items-center">
           {currentPage > 1 && (

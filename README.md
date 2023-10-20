@@ -37,17 +37,6 @@ npm start
 Após executar o comando acima, o aplicativo estará disponível em http://localhost:3000. Abra seu navegador e acesse esta URL para ver o aplicativo em funcionamento.
 
 
-## Estrutura do Projeto
-
-Explicação breve sobre a estrutura de arquivos do projeto:
-
-    public/: Contém o arquivo HTML principal e outros assets públicos.
-    src/: Contém os arquivos JavaScript e CSS do aplicativo.
-        src/App.js: Arquivo principal do componente App.
-        src/index.js: Ponto de entrada do aplicativo React.
-
-
-
 ### Contribuição
 
 Se você encontrar problemas ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.

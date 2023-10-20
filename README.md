@@ -24,15 +24,15 @@ Antes de começar, você precisa ter o Node.js e o npm (ou yarn) instalados em s
 ### Instale as Dependências:
 
 npm install
-// ou usando yarn
-// yarn install
+* ou usando yarn
+* yarn install
 
 
 ### Inicie o Servidor de Desenvolvimento:
 
 npm start
-// ou usando yarn
-// yarn start
+* ou usando yarn
+* yarn start
 
 
 ### Acesse o Aplicativo no Navegador:

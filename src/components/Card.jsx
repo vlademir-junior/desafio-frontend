@@ -7,7 +7,7 @@ const calculateDaysAgo = (publicationDate) => {
   const [day, month, year] = datePart.split('/');
 
   const currentDate = new Date();
-  const newsDate = new Date(Number(year), Number(month) - 1, Number(day));
+  const newsDate = new Date(Number(year), Number(month) - 1, Number(day) + 1);
 
   const timeDifference = Math.abs(currentDate - newsDate);
   const daysAgo = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
